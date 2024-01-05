@@ -11,3 +11,18 @@ Make sure you have the followin steps completed before the workshop:
 - Optional Download for Windows/macOS: [Github Desktop](https://desktop.github.com/)
 
 Additionally, participants might find it helpful to read the Project Pythia Foundations textbook [GitHub chapters](https://foundations.projectpythia.org/foundations/getting-started-github.html).
+
+## Set up Windows
+## Set up macOS
+## Set up Linux
+
+## Github Overview:
+Repository (repo):
+Branch:
+Commit:
+Pull Request
+
+## Practice: Create Github Issues
+## Practice: Address Github Issues
+## Practice: Fix Github Issues
+## Practice: Pull Request
