@@ -34,12 +34,28 @@ cd esds-github-sandbox/
 In the cloned repo, new Github Options will be avaliable
 ![tutorial-image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/f8ff6fb6-68a6-404d-b713-b040dc5b48ee)
 
-`(main)` refers to the branch that the user is currently on
+`(main)` refers to the branch that the user is currently on, will cover this is more detail in the next sections
 
 Can run github commands from this repo from this point, [jump down to Github Setup to continue](#Github-Setup)
 
 ### Setup Linux
 
+Open terminal prompt in Desktop
+
+If terminal is opened in a position that is not the Desktop, move to desktop with the command:
+
+```
+cd
+cd Desktop/
+```
+Clone Github repo esds-github-sandbox
+```
+git clone https://github.com/ProjectPythia/esds-github-sandbox.git
+```
+Move into repo on the command line
+```
+cd esds-github-sandbox/
+```
 ### Setup macOS
 
 - Optional Download for Windows/macOS: [Github Desktop](https://desktop.github.com/)
