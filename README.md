@@ -68,10 +68,10 @@ git commands are the same on all platforms (Windows/macOS/Linux)
 
 `git status`: 
 
-When a new Python file named `example_script.py` is added to the repo, running `git status` will show the new file. It is listed as untracked since it is not currently a part of the repo until it is has been committed
+When a new Python file named `example_script.py` is added to the repo, running `git status` will show the new file. The new file is in red and it is listed as untracked since it is not currently a part of the repo until it is has been committed
 
 ```
-user@linux-os:~/Desktop/esds-github-sandbox$ git status
+user@user-os:~/Desktop/esds-github-sandbox$ git status
 On branch main
 Your branch is up-to-date with 'origin/main'.
 Untracked files:
@@ -85,10 +85,37 @@ nothing added to commit but untracked files present (use "git add" to track)
 `git add`:
 
 ```
+git add example_script.py
+```
+Running `git status` will show that the new file is not in green and is now tracked
+```
+user@user-os:~/Desktop/esds-github-sandbox$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   example_script.py
+```
+`git restore --staged`: the opposite of `git add`, to remove a tracked change if you want to not include it in a commit
+```
+git restore --staged example_script.py
+```
+Running `git status` will show that the file has been returned to red and untracked
+```
+user@user-os:~/Desktop/esds-github-sandbox$ git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	example_script.py
+
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 `git commit`:
-
-
+`git push`:
+`git pull`:
 
 Tokens
 
