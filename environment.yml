@@ -1,0 +1,6 @@
+name: esds_github_workshop
+dependencies:
+  - python
+  - jupyterlab
+  - ipykernel
+  - numpy
