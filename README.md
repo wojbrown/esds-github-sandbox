@@ -36,7 +36,7 @@ In the cloned repo, new Github Options will be avaliable
 
 `(main)` refers to the branch that the user is currently on, will cover this is more detail in the next sections
 
-Can run github commands from this repo from this point, [jump down to Github Setup to continue](#Github-Setup)
+Can run github commands from this repo from this point, [jump down to Github Setup to continue](#Git-and-Github)
 
 ### Setup Linux
 
@@ -61,8 +61,37 @@ cd esds-github-sandbox/
 - Optional Download for Windows/macOS: [Github Desktop](https://desktop.github.com/)
 
 
-## Github Setup
-Command Line and Tokens
+## Git and Github
+Git vs. Github
+
+git commands are the same on all platforms (Windows/macOS/Linux)
+
+`git status`: 
+
+When a new Python file named `example_script.py` is added to the repo, running `git status` will show the new file. It is listed as untracked since it is not currently a part of the repo until it is has been committed
+
+```
+user@linux-os:~/Desktop/esds-github-sandbox$ git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	example_script.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+`git add`:
+
+```
+```
+`git commit`:
+
+
+
+Tokens
+
 
 ## Github Overview:
 Repository (repo):
