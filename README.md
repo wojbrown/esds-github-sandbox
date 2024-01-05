@@ -12,17 +12,20 @@ Make sure you have the followin steps completed before the workshop:
 
 Additionally, participants might find it helpful to read the Project Pythia Foundations textbook [GitHub chapters](https://foundations.projectpythia.org/foundations/getting-started-github.html).
 
-## Set up Windows
-## Set up macOS
-## Set up Linux
+### Set up Windows
+### Set up macOS
+### Set up Linux
 
 ## Github Overview:
 Repository (repo):
 Branch:
 Commit:
-Pull Request
+Pull Request:
 
 ## Practice: Create Github Issues
 ## Practice: Address Github Issues
 ## Practice: Fix Github Issues
 ## Practice: Pull Request
+
+## Future Work: Good First Issues
+https://goodfirstissue.dev/
