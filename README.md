@@ -19,8 +19,9 @@ Open Github Bash
 
 By default, Github Bash will open a command line on `/c/Users/<USERNAME>`
 
-Move command line into Desktop
+If terminal is opened in a position that is not the Desktop, move to desktop with the command:
 ```
+cd
 cd Desktop/
 ```
 Clone Github repo esds-github-sandbox
@@ -36,7 +37,7 @@ In the cloned repo, new Github Options will be avaliable
 
 `(main)` refers to the branch that the user is currently on, will cover this is more detail in the next sections
 
-Can run github commands from this repo from this point, [jump down to Github Setup to continue](#Git-and-Github)
+Can run github commands from this repo from this point, [jump down to the next section to continue](#Git-and-Github)
 
 ### Setup Linux
 
@@ -62,13 +63,24 @@ cd esds-github-sandbox/
 
 
 ## Git and Github
-Git vs. Github
+**Git vs. Github**
 
-git commands are the same on all platforms (Windows/macOS/Linux)
+Github is a website ([github.com](https://github.com/) that hosts git repositories. Git is a system with a series of commands that operate a version control system that allows for programmers to track changes in code and collaborate on code in groups
 
-`git status`: 
+Git allows for a multiple developers to be developing on the same repo at the same time and clearly manage conflicts. This works by each developer having their own local copy of a repo that they work on and then git commands are used when it is time to combine with the 'master' repo (on Github)
 
-When a new Python file named `example_script.py` is added to the repo, running `git status` will show the new file. The new file is in red and it is listed as untracked since it is not currently a part of the repo until it is has been committed
+Git works with three main areas: 1. a local working directory, 2. a staging area, 3. a remote 'master' repo. The local working directory lives on a user's computer when `git clone` is run. This is where a user can make changes to a repo locally. The staging area is middle ground between the local repo and the 'master' repo where a user can decide which changes they have made will be commited to the 'master' repo. The 'master' repo is the remote repo that lives on Github
+
+**Github Token**
+
+**git commands via command line**
+git operates with a series of commands that are the same on all platforms (Windows/macOS/Linux)
+
+`git status`: displays all local changes in the local working directory and staging area
+
+Any changes that a user makes to their local copy of a repo can be viewed with git status. In addition, git status can also give a user information about if changes have been made to the 'master' repo since the user can downloaded their repo
+
+If a new Python file named `example_script.py` is added to user's local copy of the repo, running `git status` will show the new file. The new file only exists on the local repo until the changes are committed to the 'master' repo. If a file is in red then it is listed as untracked and not in the staging area to be commited in the 'master' repo.
 
 ```
 user@user-os:~/Desktop/esds-github-sandbox$ git status
@@ -82,12 +94,14 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-`git add`:
+`git add`: moves a change on a local repo in the staging area
+
+By running `git add <filename>`, a local change or new file will be moved into the staging area where it can be committed in to the 'master' repo. Running `git add *` will add all files in the working directory into the staging area, but specifying individual files can be useful if a user does not want to commit all changes to the 'master' repo
 
 ```
 git add example_script.py
 ```
-Running `git status` will show that the new file is not in green and is now tracked
+Running `git status` now will show that the new file is now green and is in the staging area
 ```
 user@user-os:~/Desktop/esds-github-sandbox$ git status
 On branch main
@@ -101,7 +115,7 @@ Changes to be committed:
 ```
 git restore --staged example_script.py
 ```
-Running `git status` will show that the file has been returned to red and untracked
+Running `git status` after `git restore` will show that the file has been returned to red and is no longer in the staging area
 ```
 user@user-os:~/Desktop/esds-github-sandbox$ git status
 On branch main
@@ -113,11 +127,30 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-`git commit`:
-`git push`:
-`git pull`:
+`git commit`: commits a change in the local repo to the 'master' repo
 
-Tokens
+Running git commit will move the changes from the working area and into the repo space that will be pushed to 'master' repo when `git push` is called. The changes will not show up in the 'master' repo until `git push` is called however. Often `git commit` and `git push` are called together since this moves the changes from the staging area and into the 'master' repo all at once. However, this is seperated into two steps to avoid causing conflicts on the 'master' repo if a change to a file occurs on the local directory but the local directory is out of date (which can be avoided with `git pull` to get changes before committing)
+
+Just running `git commit` without `git push` will move the changes fully out of the local working directory into the staging area which running `git status` will warn the user about
+```
+user@user-os:~/Desktop/esds-github-sandbox$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+```
+`git push`: push commits in staging area into the 'master' repo
+
+Running `git push` will publish changes to the 'master' repo and prompt the user for their Github username and password. Rather than using the Github password that a user logs into their account with, Github requires a user's password to be a token for security reasons
+
+```
+git push
+```
+`git pull`: fetch changes committed to the 'master' repo
+
+While working on the local working directory it is possible that changes have been made to the 'master' repo. This can happen when other users push changes the 'master' repo since the local copy of a repo has been updated. Running `git pull` will fetch those changes and apply them to the local repo. If there is a chance that if the user is making changes to the same file that changes have been published to the 'master' repo then merge conflicts can occur
+
+Merge conflicts
 
 
 ## Github Overview:
