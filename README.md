@@ -63,7 +63,7 @@ cd esds-github-sandbox/
 
 
 ## Git and Github
-**Git vs. Github**
+### Git vs. Github
 
 Github is a website ([github.com](https://github.com/) that hosts git repositories. Git is a system with a series of commands that operate a version control system that allows for programmers to track changes in code and collaborate on code in groups
 
@@ -71,9 +71,28 @@ Git allows for a multiple developers to be developing on the same repo at the sa
 
 Git works with three main areas: 1. a local working directory, 2. a staging area, 3. a remote 'master' repo. The local working directory lives on a user's computer when `git clone` is run. This is where a user can make changes to a repo locally. The staging area is middle ground between the local repo and the 'master' repo where a user can decide which changes they have made will be commited to the 'master' repo. The 'master' repo is the remote repo that lives on Github
 
-**Github Token**
+### Generate Github Access Token
 
-**git commands via command line**
+Remote access to a Githut account like using git commands on the command line are accessed via personal access tokens. To generate a personal access token:
+
+1. Open Github.com
+2. On the top right of the website, select your personal profile
+3. Select Settings
+4. On the left toolbar on the bottom, select Developer Settings
+5. Select Personal access tokens
+6. Select Tokens (classic)
+7. Select Generate new token
+8. Select Generate new token (classic)
+9. Give the token a name under 'Note' (for example: laptop-github)
+10. Under Expiration, select 'No expiration' (you can remove tokens at anytime)
+11. Under Select Scope, check top 'repo'
+12. Select Generate token
+13. Copy down the token locally since it will only be given once
+
+
+[For more information about personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+
+### git commands via command line
 git operates with a series of commands that are the same on all platforms (Windows/macOS/Linux)
 
 `git status`: displays all local changes in the local working directory and staging area
@@ -141,7 +160,7 @@ nothing to commit, working directory clean
 ```
 `git push`: push commits in staging area into the 'master' repo
 
-Running `git push` will publish changes to the 'master' repo and prompt the user for their Github username and password. Rather than using the Github password that a user logs into their account with, Github requires a user's password to be a token for security reasons
+Running `git push` will publish changes to the 'master' repo and prompt the user for their Github username and password. Rather than using the Github password that a user logs into their account with, Github requires a user's password to be a token for security reasons. For more information about generating an access token review [Generate Github Access Token](#Generate-Github-Access-Token)
 
 ```
 git push
@@ -150,7 +169,7 @@ git push
 
 While working on the local working directory it is possible that changes have been made to the 'master' repo. This can happen when other users push changes the 'master' repo since the local copy of a repo has been updated. Running `git pull` will fetch those changes and apply them to the local repo. If there is a chance that if the user is making changes to the same file that changes have been published to the 'master' repo then merge conflicts can occur
 
-Merge conflicts
+### Merge conflicts
 
 
 ## Github Overview:
