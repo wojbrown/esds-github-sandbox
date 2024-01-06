@@ -46,21 +46,63 @@ Move into repo on the command line
 ```
 cd esds-github-sandbox/
 ```
-Can run github commands from this repo from this point, [jump down to the next section to continue](#Git-and-Github)
+Can run git commands from this repo from this point
+
+## Setting Up Git Username and Email
+
+By setting up `git config`, git will not prompt you for this information everytime a command is run that requires information abdout the user's username and email
+
+**Configure git username**
+
+The username is the name associated with Github (not the profile full name). You can check your name by selecting Profile and checking the url (for example: https://github.com/<github-username>"
+```
+git config --global user.name "<github-username>"
+```
+
+**Configure git email**
+
+Github associates alll commits to an account's email address, but Github has the option keep the email private. Using Github's `noreply` pseudo email address when committing changes in Github protects privacy and hides a developer's personal email, while still associating all changes in a commit to the correct author
+
+1. Open Profile > esttings
+2. Select Emails
+3. Select 'Keep my email address private'
+4. Select 'Block command line pushes that expose my email' (for extra protection)
+5. Copy the `<username>@users.noreply.github.com` Github provides
+
+In terminal: Set email address
+```
+git config --global user.email "<username>@users.noreply.github.com"
+```
+
+Verify email address has been set correctly
+```
+git config --global user.email
+```
+Will print out `<username>@users.noreply.github.com` if set correctly
+
+Set up
 
 ## Git and Github
 ### Git vs. Github
 
-Github is a website ([github.com](https://github.com/)) that hosts git repositories. Git is a system with a series of commands that operate a version control system that allows for programmers to track changes in code and collaborate on code in groups
+Github is a website ([github.com](https://github.com/)) that hosts git repositories. Github allows for code to be shared and makes collaboration easy. By default, Github repos are public and even people without Github logins can view all the data, code, and documentation in a repo (although Github also have private repo options).
 
-Git allows for a multiple developers to be developing on the same repo at the same time and clearly manage conflicts. This works by each developer having their own local copy of a repo that they work on and then git commands are used when it is time to combine with the 'master' repo (on Github)
+Git is a system with a series of commands that operate a version control system that allows for programmers to track changes in code and collaborate on code in groups
 
-Git works with three main areas: 1. a local working directory, 2. a staging area, 3. a remote 'master' repo. The local working directory lives on a user's computer when `git clone` is run. This is where a user can make changes to a repo locally. The staging area is middle ground between the local repo and the 'master' repo where a user can decide which changes they have made will be commited to the 'master' repo. The 'master' repo is the remote repo that lives on Github
+Git allows for a multiple developers to develop on the same repo at the same time and cleanly manage conflicts. This works by each developer having their own local copy of a repo that they work on and then git commands are used when it is time to combine with the 'master' repo (on Github)
+
+Git works with three main areas: 
+
+1. a local working directory
+2. a staging area
+3. a remote 'master' repo
+
+The local working directory lives on a user's computer when `git clone` is run. This is where a user can make changes to a repo locally. The staging area is middle ground between the local repo and the 'master' repo where a user can decide which changes they have made will be commited to the 'master' repo. The 'master' repo is the remote repo that lives on Github
 
 ## Github Overview:
-Repository (repo):
+Repository (repo): Location where all data, code, and documentation are stored on Github
 
-Branches:
+Branches: Each repo starts with a default branch 'main'. But developers can add new branches to isolate development work without impacting other branches in a repo
 
 Issues:
 
@@ -108,7 +150,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-`git add`: moves a change on a local repo in the staging area
+`git add`: moves a change on a local repo into the staging area
 
 By running `git add <filename>`, a local change or new file will be moved into the staging area where it can be committed in to the 'master' repo. Running `git add *` will add all files in the working directory into the staging area, but specifying individual files can be useful if a user does not want to commit all changes to the 'master' repo
 
@@ -141,9 +183,15 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-`git commit`: commits a change in the local repo to the 'master' repo
+`git commit`: saves changes from the local repo with an associated commit message
 
-Running git commit will move the changes from the working area and into the repo space that will be pushed to 'master' repo when `git push` is called. The changes will not show up in the 'master' repo until `git push` is called however. Often `git commit` and `git push` are called together since this moves the changes from the staging area and into the 'master' repo all at once. However, this is seperated into two steps to avoid causing conflicts on the 'master' repo if a change to a file occurs on the local directory but the local directory is out of date (which can be avoided with `git pull` to get changes before committing)
+A message is included when `git commit` is run to provide information about what changes were made. The message is written after `-m` in quotes
+
+```
+user@user-os:~/Desktop/esds-github-sandbox$ git commit -m "new python script added"
+```
+
+Running `git commit` will move the changes from the working area and into the repo space that will be pushed to 'master' repo when `git push` is called. The changes will not show up in the 'master' repo until `git push` is called however. Often `git commit` and `git push` are called together since this moves the changes from the staging area and into the 'master' repo all at once. However, this is seperated into two steps to avoid causing conflicts on the 'master' repo if a change to a file occurs on the local directory but the local directory is out of date (which can be avoided with `git pull` to get changes before committing)
 
 Just running `git commit` without `git push` will move the changes fully out of the local working directory into the staging area which running `git status` will warn the user about
 ```
@@ -163,6 +211,9 @@ git push
 `git pull`: fetch changes committed to the 'master' repo
 
 While working on the local working directory it is possible that changes have been made to the 'master' repo. This can happen when other users push changes the 'master' repo since the local copy of a repo has been updated. Running `git pull` will fetch those changes and apply them to the local repo. If there is a chance that if the user is making changes to the same file that changes have been published to the 'master' repo then merge conflicts can occur
+
+[For more information about Git and Github](https://gitbookdown.dallasdatascience.com/)
+[For more information about Git](https://rogerdudler.github.io/git-guide/)
 
 If you are interested in using an application instead of the command line to operate git commands, you can download [Github Desktop](https://desktop.github.com/) for Windows/macOS
 
