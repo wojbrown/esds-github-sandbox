@@ -54,10 +54,15 @@ By setting up `git config`, git will not prompt you for this information everyti
 
 **Configure git username**
 
-The username is the name associated with Github (not the profile full name). You can check your name by selecting Profile and checking the url (for example: https://github.com/<github-username>"
+The username is the name associated with Github (not the profile full name). You can check your name by selecting Profile and checking the url (for example: https://github.com/github-username"
 ```
 git config --global user.name "<github-username>"
 ```
+Verify username has been set correctly
+```
+git config --global user.name
+```
+Will print out `<github-username>` if set correctly
 
 **Configure git email**
 
@@ -69,7 +74,6 @@ Github associates alll commits to an account's email address, but Github has the
 4. Select 'Block command line pushes that expose my email' (for extra protection)
 5. Copy the `<username>@users.noreply.github.com` Github provides
 
-In terminal: Set email address
 ```
 git config --global user.email "<username>@users.noreply.github.com"
 ```
@@ -79,8 +83,6 @@ Verify email address has been set correctly
 git config --global user.email
 ```
 Will print out `<username>@users.noreply.github.com` if set correctly
-
-Set up
 
 ## Git and Github
 ### Git vs. Github
@@ -100,13 +102,33 @@ Git works with three main areas:
 The local working directory lives on a user's computer when `git clone` is run. This is where a user can make changes to a repo locally. The staging area is middle ground between the local repo and the 'master' repo where a user can decide which changes they have made will be commited to the 'master' repo. The 'master' repo is the remote repo that lives on Github
 
 ## Github Overview:
-Repository (repo): Location where all data, code, and documentation are stored on Github
+**Repository (repo)**
 
-Branches: Each repo starts with a default branch 'main'. But developers can add new branches to isolate development work without impacting other branches in a repo
+Location where all data, code, and documentation are stored on Github. _This_ is a public Github repo and lives at [github.com/ProjectPythia/esds-github-sandbox](https://github.com/ProjectPythia/esds-github-sandbox)
 
-Issues:
+**Branches**
 
-Pull Requests:
+Each repo starts with a default branch 'main'. But developers can add new branches to isolate development work without impacting other branches in a repo. This is also useful when working on multiple different features at the same time without the changes to one feature impacting the other. All changes can be made on a branch in isolation and then merged back into the 'main' brnach.
+
+[For more information about Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
+
+**Issues**
+
+Issues are the way that a repo can receive and track bugs, tasks, and feature requests. If you find an issue with a repo that you are working with or have a question about functionality, you can submit an Issue to the repo for the developers to review and response to. Anyone with a Github account can submit an Issue to a repo. All open Issues are visible at the top of a Github repo
+
+[For more information about Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+
+**Fork Repo**
+
+A fork is a new repository that is cloned from the original repository. The forked repo is a clone of the original that lives on your own Github account. You can fork any public repo on Github to your own account for experimentation and ay changes on forked repo can be submitted for review to the original repo via a Pull Request. Forking a repo is also a way to use an existing project as a starting point for your own ideas (if you do this, make sure you've checked the original repo's license)
+
+[For more information about Forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+
+**Pull Requests**
+
+A Pull Request allows for changes made to a repo by a user that does not have permissions to change a repo to be submitted for review. If accepted, the original repo can "Pull" the requested changes and merge them into the original repo. This is the most common way to contribute to public repos. All open Pull Requests are visible at the top of a Github repo
+
+[For more information about Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
 ### Generate Github Access Token
 
@@ -125,7 +147,6 @@ Remote access to a Githut account like using git commands on the command line ar
 11. Under Select Scope, check top 'repo'
 12. Select Generate token
 13. Copy down the token locally since it will only be given once
-
 
 [For more information about personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
@@ -217,11 +238,17 @@ While working on the local working directory it is possible that changes have be
 
 If you are interested in using an application instead of the command line to operate git commands, you can download [Github Desktop](https://desktop.github.com/) for Windows/macOS
 
-### Merge conflicts
+### Conflicts
+
+Some good ways to avoid conflicts:
+- Ensure that your repo is up to date before commits (`git pull`)
+- Commit often with small changes
+- Use isolated branches
 
 ### Markdown
 
 ## Practice: Create Github Issues
+[Try it out!](https://github.com/ProjectPythia/esds-github-sandbox/issues)
 ## Practice: Address Github Issues
 ## Practice: Fix Github Issues
 ## Practice: Pull Request
