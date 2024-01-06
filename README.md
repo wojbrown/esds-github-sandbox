@@ -3,48 +3,37 @@ Sandbox repository for a GitHub workshop during the ESDS 2024 event (Jan. 18-19)
 
 ## Setup Instructions
 
-Make sure you have the followin steps completed before the workshop:
+Make sure you have the following steps completed before the workshop:
 
 - [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - Create a [GitHub](https://github.com/) account
 - Install Python [miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html)
+- [Generate Github Access Token](#Generate-Github-Access-Token)
 
 Additionally, participants might find it helpful to read the Project Pythia Foundations textbook [GitHub chapters](https://foundations.projectpythia.org/foundations/getting-started-github.html).
 
-### Setup Windows
-Git Bash
-- Optional Download for Windows/macOS: [Github Desktop](https://desktop.github.com/)
+### Setup on Windows
+Git Bash should be installed by default for Windows 11. In search bar, search for `git bash` and open git bash as a new terminal on Windows
 
-Open Github Bash
+If Git Bash is not available, it can be [downloaded for Windows here](https://git-scm.com/download/win)
 
-By default, Github Bash will open a command line on `/c/Users/<USERNAME>`
+By default, a terminal in Github Bash will open a command line on `/c/Users/<USERNAME>`
 
-If terminal is opened in a position that is not the Desktop, move to desktop with the command:
-```
-cd
-cd Desktop/
-```
-Clone Github repo esds-github-sandbox
-```
-git clone https://github.com/ProjectPythia/esds-github-sandbox.git
-```
-Move into repo on the command line
-```
-cd esds-github-sandbox/
-```
-In the cloned repo, new Github Options will be avaliable
-![tutorial-image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/f8ff6fb6-68a6-404d-b713-b040dc5b48ee)
-
-`(main)` refers to the branch that the user is currently on, will cover this is more detail in the next sections
-
-Can run github commands from this repo from this point, [jump down to the next section to continue](#Git-and-Github)
+Move onto [Downloading Github Repo](#Download-Github-Repo)
 
 ### Setup Linux
 
-Open terminal prompt in Desktop
+Open terminal prompt
+
+Move onto [Downloading Github Repo](#Download-Github-Repo)
+
+### Setup macOS
+
+Move onto [Downloading Github Repo](#Download-Github-Repo)
+
+## Download Github Repo
 
 If terminal is opened in a position that is not the Desktop, move to desktop with the command:
-
 ```
 cd
 cd Desktop/
@@ -57,19 +46,25 @@ Move into repo on the command line
 ```
 cd esds-github-sandbox/
 ```
-### Setup macOS
-
-- Optional Download for Windows/macOS: [Github Desktop](https://desktop.github.com/)
-
+Can run github commands from this repo from this point, [jump down to the next section to continue](#Git-and-Github)
 
 ## Git and Github
 ### Git vs. Github
 
-Github is a website ([github.com](https://github.com/) that hosts git repositories. Git is a system with a series of commands that operate a version control system that allows for programmers to track changes in code and collaborate on code in groups
+Github is a website ([github.com](https://github.com/)) that hosts git repositories. Git is a system with a series of commands that operate a version control system that allows for programmers to track changes in code and collaborate on code in groups
 
 Git allows for a multiple developers to be developing on the same repo at the same time and clearly manage conflicts. This works by each developer having their own local copy of a repo that they work on and then git commands are used when it is time to combine with the 'master' repo (on Github)
 
 Git works with three main areas: 1. a local working directory, 2. a staging area, 3. a remote 'master' repo. The local working directory lives on a user's computer when `git clone` is run. This is where a user can make changes to a repo locally. The staging area is middle ground between the local repo and the 'master' repo where a user can decide which changes they have made will be commited to the 'master' repo. The 'master' repo is the remote repo that lives on Github
+
+## Github Overview:
+Repository (repo):
+
+Branches:
+
+Issues:
+
+Pull Requests:
 
 ### Generate Github Access Token
 
@@ -169,22 +164,23 @@ git push
 
 While working on the local working directory it is possible that changes have been made to the 'master' repo. This can happen when other users push changes the 'master' repo since the local copy of a repo has been updated. Running `git pull` will fetch those changes and apply them to the local repo. If there is a chance that if the user is making changes to the same file that changes have been published to the 'master' repo then merge conflicts can occur
 
+If you are interested in using an application instead of the command line to operate git commands, you can download [Github Desktop](https://desktop.github.com/) for Windows/macOS
+
 ### Merge conflicts
 
-
-## Github Overview:
-Repository (repo):
-
-Branch:
-
-Commit:
-
-Pull Request:
+### Markdown
 
 ## Practice: Create Github Issues
 ## Practice: Address Github Issues
 ## Practice: Fix Github Issues
 ## Practice: Pull Request
 
-## Future Work: Good First Issues
+## Future Work: 
+
+Get involved! Good First Issues
+
 https://goodfirstissue.dev/
+
+[Make a Custom Github Profile Page](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile)
+
+Making a personal Github profile page for others to see when they select your profile ([some good examples](https://github.com/abhisheknaiidu/awesome-github-profile-readme))
