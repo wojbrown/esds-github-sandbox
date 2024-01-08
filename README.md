@@ -50,11 +50,13 @@ Can run git commands from this repo from this point
 
 ## Setting Up Git Username and Email
 
-By setting up `git config`, git will not prompt you for this information everytime a command is run that requires information abdout the user's username and email
+It can be useful to set up `git config` options. When running commands that interact with a repo or require permissions, git will prompt you for your username, email, and password. By configuring git, the username and email can be saved locally that avoid being constantly prompted for this information
 
 **Configure git username**
 
-The username is the name associated with Github (not the profile full name). You can check your name by selecting Profile and checking the url (for example: https://github.com/github-username"
+The username is the name associated with Github (not the profile full name). You can check your name by selecting Profile and checking the url (for example: https://github.com/github-username)
+
+Set username on the terminal
 ```
 git config --global user.name "<github-username>"
 ```
@@ -66,7 +68,9 @@ Will print out `<github-username>` if set correctly
 
 **Configure git email**
 
-Github associates alll commits to an account's email address, but Github has the option keep the email private. Using Github's `noreply` pseudo email address when committing changes in Github protects privacy and hides a developer's personal email, while still associating all changes in a commit to the correct author
+Github associates alll commits to an account's email address, but Github has the option keep the email private. Using Github's `noreply` pseudo email address when committing changes protects privacy and hides a developer's personal email, while still associating all changes in a commit to the correct author
+
+To find the `noreply` email that Github has generated for your specific account:
 
 1. Open Profile > esttings
 2. Select Emails
@@ -74,10 +78,10 @@ Github associates alll commits to an account's email address, but Github has the
 4. Select 'Block command line pushes that expose my email' (for extra protection)
 5. Copy the `<username>@users.noreply.github.com` Github provides
 
+Set the email address on the terminal
 ```
 git config --global user.email "<username>@users.noreply.github.com"
 ```
-
 Verify email address has been set correctly
 ```
 git config --global user.email
@@ -132,7 +136,7 @@ A Pull Request allows for changes made to a repo by a user that does not have pe
 
 ### Generate Github Access Token
 
-Remote access to a Githut account like using git commands on the command line are accessed via personal access tokens. To generate a personal access token:
+To use git commands on the command line via the terminal require remote access to a Github account with personal access tokens. To generate a personal access token:
 
 1. Open Github.com
 2. On the top right of the website, select your personal profile
@@ -151,7 +155,7 @@ Remote access to a Githut account like using git commands on the command line ar
 [For more information about personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
 ### git commands via command line
-git operates with a series of commands that are the same on all platforms (Windows/macOS/Linux)
+git operates with a series of commands that are the same on all platforms (Windows/macOS/Linux) when running on the command line
 
 `git status`: displays all local changes in the local working directory and staging area
 
