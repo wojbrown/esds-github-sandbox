@@ -115,16 +115,11 @@ Location where all data, code, and documentation are stored on Github. _This_ is
 Each repo starts with a default branch 'main'. But developers can add new branches to isolate development work without impacting other branches in a repo. This is also useful when working on multiple different features at the same time without the changes to one feature impacting the other. All changes can be made on a branch in isolation and then merged back into the 'main' brnach.
 
 [For more information about Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
-
-**Issues**
-
-Issues are the way that a repo can receive and track bugs, tasks, and feature requests. If you find an issue with a repo that you are working with or have a question about functionality, you can submit an Issue to the repo for the developers to review and response to. Anyone with a Github account can submit an Issue to a repo. All open Issues are visible at the top of a Github repo
-
-[For more information about Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
-
 **Fork Repo**
 
 A fork is a new repository that is cloned from the original repository. The forked repo is a clone of the original that lives on your own Github account. You can fork any public repo on Github to your own account for experimentation and ay changes on forked repo can be submitted for review to the original repo via a Pull Request. Forking a repo is also a way to use an existing project as a starting point for your own ideas (if you do this, make sure you've checked the original repo's license)
+
+![fork](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/3e35c9dc-1932-499a-a94d-24fc1a42d05c)
 
 [For more information about Forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
 
@@ -269,10 +264,42 @@ Some good ways to avoid conflicts:
 - Use isolated branches
 
 ## Practice: Create Github Issues
-[Try it out!](https://github.com/ProjectPythia/esds-github-sandbox/issues)
+Github Issues track issues, bugs, and feature requests to a repo. They can be created by anyone with a Github account, even if they do not have permissions to edit the repo
+
+[Try it out! Create an Issue for this repo](https://github.com/ProjectPythia/esds-github-sandbox/issues)
+
 ## Practice: Address Github Issues
 ## Practice: Fix Github Issues
 ## Practice: Pull Request
+A Pull Request allows for a developer that does not otherwise have permissions suggest changes to be merged into a branch/repo
+
+To make a pull request, first fork this repo:
+
+![fork](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/3e35c9dc-1932-499a-a94d-24fc1a42d05c)
+
+Github will pop up a prompt to "Create a new fork". Accept the default options and select `Create Fork`
+
+The forked repo will appear on your personal profile as a cloned version of the repo that you will have permissions to edit
+
+![new-repo](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/7a8c327c-4367-480b-a99e-423382c0ce5e)
+
+On your new forked repo, open the README.md file and edit. You can edit files directly on Github by selecting the edit button at the top of the file
+
+![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/3f1b3f11-623b-4c19-96b2-3ea6e2480989)
+
+Edit the file by add a new line or comment or correct a mispelling and select the green `Commit changes` option
+
+![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/5308ae4d-b6fb-43b6-95d6-5f0ffb70b124)
+
+The prompt replaces the command line `git commit -m "Update README.md"`
+
+Select `Create a new branch for this commit and start a pull request`
+
+![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/a52d0189-1ed8-4687-b8ec-abfeb709e5e8)
+
+Github will display the changes between the main branch and the new patch branch. Select `Create pull request`
+
+Fill out `Open a pull request` with a relevant Title and a summary of description of the changes that you have added
 
 ## Future Work: 
 
