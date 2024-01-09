@@ -257,12 +257,16 @@ changes that were added later
 ```
 Git added the merge conflict notes `<<<<<<< HEAD` and `>>>>>>> new_branch_to_merge_later` changes seperated by `=======` divider. To resolve merge conflicts, edit the conflicted file and remove the merge conflict notes that Git added
 
+Add changes some merge conflict and commit
+```
+git add <changed_file>
+git commit -m "resolve merge conflicts"
+```
+
 Some good ways to avoid conflicts:
 - Ensure that your repo is up to date before commits (`git pull`)
 - Commit often with small changes
 - Use isolated branches
-
-### Markdown
 
 ## Practice: Create Github Issues
 [Try it out!](https://github.com/ProjectPythia/esds-github-sandbox/issues)
