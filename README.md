@@ -48,7 +48,7 @@ cd esds-github-sandbox/
 ```
 Can run git commands from this repo from this point
 
-## Setting Up Git Username and Email
+## Setting Up Git Username and Email (Optional)
 
 It can be useful to set up `git config` options. When running commands that interact with a repo or require permissions, git will prompt you for your username, email, and password. By configuring git, the username and email can be saved locally that avoid being constantly prompted for this information
 
@@ -243,6 +243,19 @@ While working on the local working directory it is possible that changes have be
 If you are interested in using an application instead of the command line to operate git commands, you can download [Github Desktop](https://desktop.github.com/) for Windows/macOS
 
 ### Conflicts
+It is possible for a conflict to occur if two people are modifying the same lines in the same file at the same time. A conflict occurs when Git cannot automatically determine which change should take priority. A conflict marks the file and prevents a proper merge from occuring. Git will prompt the developers to fix changes to conflict before attempting to merge again
+
+A conflict will most likely occur when a merge is attempted. This can occur when a merge starts and a conflict is found in the staging area or during a merge when a conflict is found in the remote Github repo. When `git commit` is run, Git will check to see if there are any pending changes in the working directory that are in conflict with the `git commit`. If a conflict is found, the commit will be temporarily halted until the conflict is resolved
+
+When a conflict is found, Git will automatically attempt to merge the conflicts into a single file with a label for which changes are from the HEAD and which changes are from the local branch
+```
+<<<<<<< HEAD
+changes from the HEAD that caused conflict
+=======
+changes that were added later
+>>>>>>> new_branch_to_merge_later
+```
+Git added the merge conflict notes `<<<<<<< HEAD` and `>>>>>>> new_branch_to_merge_later` changes seperated by `=======` divider. To resolve merge conflicts, edit the conflicted file and remove the merge conflict notes that Git added
 
 Some good ways to avoid conflicts:
 - Ensure that your repo is up to date before commits (`git pull`)
