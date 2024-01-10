@@ -110,6 +110,17 @@ The local working directory lives on a user's computer when `git clone` is run. 
 
 Location where all data, code, and documentation are stored on Github. _This_ is a public Github repo and lives at [github.com/ProjectPythia/esds-github-sandbox](https://github.com/ProjectPythia/esds-github-sandbox)
 
+Breakdown of a typical repo:
+
+- `README.md` - Description of the repo and displays on the profile for a repo (_this_ is a README.md)
+- `__init__.py` - indicates a Python package
+- `requirements.yml` - setup conda environment
+- `.gitignore` - files that don’t need to be preserved in a repo that will not show up when running commands like `git status`
+- `.github/` - folder for GitHub actions and workflows
+- Code - what you want to focus on
+- Tests - Tests for code and functionality
+
+Good example repo: https://github.com/ajdawson/eofs
 **Branches**
 
 Each repo starts with a default branch 'main'. But developers can add new branches to isolate development work without impacting other branches in a repo. This is also useful when working on multiple different features at the same time without the changes to one feature impacting the other. All changes can be made on a branch in isolation and then merged back into the 'main' brnach.
@@ -270,6 +281,7 @@ Github Issues track issues, bugs, and feature requests to a repo. They can be cr
 
 ## Practice: Address Github Issues
 ## Practice: Fix Github Issues
+## Practice: Branches
 ## Practice: Pull Request
 A Pull Request allows for a developer that does not otherwise have permissions suggest changes to be merged into a branch/repo
 
@@ -303,10 +315,10 @@ Fill out `Open a pull request` with a relevant Title and a summary of descriptio
 
 ## Future Work: 
 
-Get involved! Good First Issues
+### Find Good First Issues
+[goodfirstissue.dev/](https://goodfirstissue.dev/)
 
-https://goodfirstissue.dev/
-
+### Fill out Your Github Profile Page
 [Make a Custom Github Profile Page](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile)
 
 Making a personal Github profile page for others to see when they select your profile ([some good examples](https://github.com/abhisheknaiidu/awesome-github-profile-readme))
