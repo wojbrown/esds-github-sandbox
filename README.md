@@ -356,7 +356,7 @@ Fill out `Open a pull request` with a relevant Title and a summary of descriptio
 
 You can view all your open Pull Requests at [github.com/pulls](https://github.com/pulls)
 
-## Future Work, Getting Started: 
+## Future Work: 
 
 ### Find Good First Issues
 If you want to tackle some more Issues and contribute to open source projects, you can find some issues that repos have labeled as good first issues here:
@@ -369,4 +369,6 @@ Making a personal Github profile page for others to see when they select your pr
 
 ### Make a New Repo
 [Make your own repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) and [give your team access to it!](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
-README.md files uses Markdown to edit: [learn how to use Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+### Learn Markdown
+README.md uses Markdown to edit: [learn how to use Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
