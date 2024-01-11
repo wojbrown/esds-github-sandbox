@@ -12,24 +12,18 @@ Make sure you have the following steps completed before the workshop:
 
 Additionally, participants might find it helpful to read the Project Pythia Foundations textbook [GitHub chapters](https://foundations.projectpythia.org/foundations/getting-started-github.html).
 
-### Setup on Windows
+### Setup
+
+Open a terminal (also known as a command prompt). In Linux and macOS, search for 'Terminal Prompt'. On Windows, the terminal is within Git Bash
+
+Move onto [Downloading Github Repo](#Download-Github-Repo)
+
+**On Windows**
 Git Bash should be installed by default for Windows 11. In search bar, search for `git bash` and open git bash as a new terminal on Windows
 
 If Git Bash is not available, it can be [downloaded for Windows here](https://git-scm.com/download/win)
 
 By default, a terminal in Github Bash will open a command line on `/c/Users/<USERNAME>`
-
-Move onto [Downloading Github Repo](#Download-Github-Repo)
-
-### Setup Linux
-
-Open terminal prompt
-
-Move onto [Downloading Github Repo](#Download-Github-Repo)
-
-### Setup macOS
-
-Move onto [Downloading Github Repo](#Download-Github-Repo)
 
 ## Download Github Repo
 
@@ -373,6 +367,6 @@ If you want to tackle some more Issues and contribute to open source projects, y
 
 Making a personal Github profile page for others to see when they select your profile ([some good examples](https://github.com/abhisheknaiidu/awesome-github-profile-readme))
 
-### Make a new Repo
+### Make a New Repo
 [Make your own repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) and [give your team access to it!](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
 README.md files uses Markdown to edit: [learn how to use Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
