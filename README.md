@@ -18,7 +18,7 @@ Open a terminal (also known as a command prompt). In Linux and macOS, search for
 
 Move onto [Downloading Github Repo](#Download-Github-Repo)
 
-**On Windows**
+#### On Windows
 Git Bash should be installed by default for Windows 11. In search bar, search for `git bash` and open git bash as a new terminal on Windows
 
 If Git Bash is not available, it can be [downloaded for Windows here](https://git-scm.com/download/win)
