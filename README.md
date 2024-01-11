@@ -121,12 +121,14 @@ Breakdown of a typical repo:
 - Code - The functions, scripts, modules, etc..
 - Tests - Testing suite that compares expected and reproduced values output from various functions with various input
 
-Good example repo: https://github.com/ajdawson/eofs
+[Good example repo](https://github.com/ajdawson/eofs)
+
 **Branches**
 
 Each repo starts with a default branch 'main'. But developers can add new branches to isolate development work without impacting other branches in a repo. This is also useful when working on multiple different features at the same time without the changes to one feature impacting the other. All changes can be made on a branch in isolation and then merged back into the 'main' brnach.
 
 [For more information about Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
+
 **Fork Repo**
 
 A fork is a new repository that is cloned from the original repository. The forked repo is a clone of the original that lives on your own Github account. You can fork any public repo on Github to your own account for experimentation and ay changes on forked repo can be submitted for review to the original repo via a Pull Request. Forking a repo is also a way to use an existing project as a starting point for your own ideas (if you do this, make sure you've checked the original repo's license)
@@ -277,11 +279,6 @@ Some good ways to avoid conflicts:
 - Commit often with small changes
 - Use isolated branches
 
-## Practice: Create Github Issues
-Github Issues track issues, bugs, and feature requests to a repo. They can be created by anyone with a Github account, even if they do not have permissions to edit the repo
-
-[Try it out! Create an Issue for this repo](https://github.com/ProjectPythia/esds-github-sandbox/issues)
-
 ## Practice: Git Workflow
 Forks
 
@@ -290,8 +287,47 @@ Branches
 Commits
 
 Pull Requests
+
+## Practice: Create Github Issues
+Github Issues track issues, bugs, and feature requests to a repo. They can be created by anyone with a Github account, even if they do not have permissions to edit the repo
+
+[Try it out! Create an Issue for this repo](https://github.com/ProjectPythia/esds-github-sandbox/issues)
+
+Open 'Issues' and select 'New Issues'
+
+By default, an Issue will allow you to fill out a Title and Description to give relevant information about the Issue you are submitting
+![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/ea3dffc4-d24f-46ba-a8ab-059bd7c6c5bb)
+
+However, this repo uses Issue Templates, so when creating a new Issue you will be prompted to select a type of Issue
+![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/f23f8027-0255-40e5-9e82-710dc41be039)
+
+Instead of a blank Title and Description, when you create a Bug Report you will be prompted to fill out specific information that the template contains
+
+![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/3820388e-279d-4d24-a4f5-0a9be5cb07de)
+
+The issue templates in this repo are:
+- `Bug Report`: Report a bug (unexpected behavior, editing mistake, etc...)
+- `Content`: Report an issue with the existing content or make a request to change it
+- `Infrastructure`: Report an issue with the existing Infrastructure
+- `Update Resource Gallery`: Submit an update to the resource gallery
+
+[For more information about Issue Templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
+
 ## Practice: Address Github Issues
+Within Issues, open [Pre-work #3](https://github.com/ProjectPythia/esds-github-sandbox/issues)
+
+Add a comment to the Issue with your username when you have completed the steps for Pre-Work
+
 ## Practice: Fix Github Issues
+Create a new Issue with the title "Github Issue Practice ESDS"
+
+Next, assign the issue to all members in your team
+
+Within an issue, you can assign an Issue to someone by selecting 'Assignees' and searching for a username
+![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/ea63d5b3-004b-48da-9d80-4e73f9e22c4f)
+
+You can view all your open Issues at [github.com/issues](https://github.com/issues)
+
 ## Practice: Branches
 ## Practice: Pull Request
 A Pull Request allows for a developer that does not otherwise have permissions suggest changes to be merged into a branch/repo
@@ -324,6 +360,8 @@ Github will display the changes between the main branch and the new patch branch
 
 Fill out `Open a pull request` with a relevant Title and a summary of description of the changes that you have added
 
+You can view all your open Pull Requests at [github.com/pulls](https://github.com/pulls)
+
 ## Future Work, Getting Started: 
 
 ### Find Good First Issues
@@ -335,4 +373,6 @@ If you want to tackle some more Issues and contribute to open source projects, y
 
 Making a personal Github profile page for others to see when they select your profile ([some good examples](https://github.com/abhisheknaiidu/awesome-github-profile-readme))
 
+### Make a new Repo
+[Make your own repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) and [give your team access to it!](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
 README.md files uses Markdown to edit: [learn how to use Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
