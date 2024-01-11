@@ -112,13 +112,14 @@ Location where all data, code, and documentation are stored on Github. _This_ is
 
 Breakdown of a typical repo:
 
-- `README.md` - Description of the repo and displays on the profile for a repo (_this_ is a README.md)
-- `__init__.py` - indicates a Python package
-- `requirements.yml` - setup conda environment
-- `.gitignore` - files that don’t need to be preserved in a repo that will not show up when running commands like `git status`
-- `.github/` - folder for GitHub actions and workflows
-- Code - what you want to focus on
-- Tests - Tests for code and functionality
+- `README.md` - The landing page for the repo that contains information such as what the project is about, who its by, how to install it, and diplsaying various status bages (_this_ is a README.md)
+- `__init__.py` - This file is required for Python to treat a given repo as a Python package
+- `LICENSE.md` - License information on how others can use this repo's contents
+- `requirements.yml` - A file specifying the required packages to be installed in an environment to run this package
+- `.gitignore` -A file that specifies untracked files, typically pointing to a cahced files or a website's 'build/' directory, essentially any file that is derivative of other code in the repo
+- `.github/` - fA folder for containing files related to Github! This could include contributing guides, a code of conduct, various Github Action scripts, a codeowners file, or issue/pull templates
+- Code - The functions, scripts, modules, etc..
+- Tests - Testing suite that compares expected and reproduced values output from various functions with various input
 
 Good example repo: https://github.com/ajdawson/eofs
 **Branches**
@@ -248,6 +249,8 @@ While working on the local working directory it is possible that changes have be
 
 If you are interested in using an application instead of the command line to operate git commands, you can download [Github Desktop](https://desktop.github.com/) for Windows/macOS
 
+There are even more commands that can handy to learn for specific cases, [more information here](https://github.com/git-tips/tips)
+
 ### Conflicts
 It is possible for a conflict to occur if two people are modifying the same lines in the same file at the same time. A conflict occurs when Git cannot automatically determine which change should take priority. A conflict marks the file and prevents a proper merge from occuring. Git will prompt the developers to fix changes to conflict before attempting to merge again
 
@@ -279,6 +282,14 @@ Github Issues track issues, bugs, and feature requests to a repo. They can be cr
 
 [Try it out! Create an Issue for this repo](https://github.com/ProjectPythia/esds-github-sandbox/issues)
 
+## Practice: Git Workflow
+Forks
+
+Branches
+
+Commits
+
+Pull Requests
 ## Practice: Address Github Issues
 ## Practice: Fix Github Issues
 ## Practice: Branches
@@ -313,12 +324,15 @@ Github will display the changes between the main branch and the new patch branch
 
 Fill out `Open a pull request` with a relevant Title and a summary of description of the changes that you have added
 
-## Future Work: 
+## Future Work, Getting Started: 
 
 ### Find Good First Issues
+If you want to tackle some more Issues and contribute to open source projects, you can find some issues that repos have labeled as good first issues here:
 [goodfirstissue.dev/](https://goodfirstissue.dev/)
 
 ### Fill out Your Github Profile Page
 [Make a Custom Github Profile Page](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile)
 
 Making a personal Github profile page for others to see when they select your profile ([some good examples](https://github.com/abhisheknaiidu/awesome-github-profile-readme))
+
+README.md files uses Markdown to edit: [learn how to use Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
