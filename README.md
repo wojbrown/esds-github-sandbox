@@ -8,7 +8,6 @@ Make sure you have the following steps completed before the workshop:
 - [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - Create a [GitHub](https://github.com/) account
 - Install Python [miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html)
-- [Generate Github Access Token](#Generate-Github-Access-Token)
 
 Additionally, participants might find it helpful to read the Project Pythia Foundations textbook [GitHub chapters](https://foundations.projectpythia.org/foundations/getting-started-github.html).
 
@@ -19,11 +18,11 @@ Open a terminal (also known as a command prompt). In Linux and macOS, search for
 Move onto [Downloading Github Repo](#Download-Github-Repo)
 
 #### On Windows
-Git Bash should be installed by default for Windows 11. In search bar, search for `git bash` and open git bash as a new terminal on Windows
+Git Bash should be installed by default for Windows 11. Search for `git bash` and open git bash as a new terminal
 
-If Git Bash is not available, it can be [downloaded for Windows here](https://git-scm.com/download/win)
+If Git Bash is not already downloaded, it can be [downloaded for Windows here](https://git-scm.com/download/win)
 
-By default, a terminal in Github Bash will open a command line on `/c/Users/<USERNAME>`
+By default, a terminal in Github Bash will open a command line at the base directory `/c/Users/<USERNAME>`
 
 ## Download Github Repo
 
@@ -41,6 +40,8 @@ Move into repo on the command line
 cd esds-github-sandbox/
 ```
 Can run git commands from this repo from this point
+
+[For more information about how to navigate the command line](https://www.git-tower.com/blog/command-line-cheat-sheet/)
 
 ## Setting Up Git Username and Email (Optional)
 
@@ -272,15 +273,6 @@ Some good ways to avoid conflicts:
 - Ensure that your repo is up to date before commits (`git pull`)
 - Commit often with small changes
 - Use isolated branches
-
-## Practice: Git Workflow
-Forks
-
-Branches
-
-Commits
-
-Pull Requests
 
 ## Practice: Create Github Issues
 Github Issues track issues, bugs, and feature requests to a repo. They can be created by anyone with a Github account, even if they do not have permissions to edit the repo
