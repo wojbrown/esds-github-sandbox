@@ -24,6 +24,22 @@ If Git Bash is not already downloaded, it can be [downloaded for Windows here](h
 
 By default, a terminal in Github Bash will open a command line at the base directory `/c/Users/<USERNAME>`
 
+## Github Overview:
+**Repository (repo)**
+
+Location where all data, code, and documentation are stored on Github. _This_ is a public Github repo and lives at [github.com/ProjectPythia/esds-github-sandbox](https://github.com/ProjectPythia/esds-github-sandbox)
+
+Breakdown of a typical repo:
+
+- `README.md` - The landing page for the repo that contains information such as what the project is about, who its by, how to install it, and displaying various status badges (_this_ is a README.md)
+- `__init__.py` - This file is required for Python to treat a given repo as a Python package
+- `LICENSE.md` - License information on how others can use this repo's contents
+- `requirements.yml` - A file specifying the required packages to be installed in an environment to run this package
+- `.gitignore` -A file that specifies untracked files, typically pointing to a cached files or a website's 'build/' directory, essentially any file that is derivative of other code in the repo
+- `.github/` - fA folder for containing files related to Github! This could include contributing guides, a code of conduct, various Github Action scripts, a codeowners file, or issue/pull templates
+- Code - The functions, scripts, modules, etc..
+- Tests - Testing suite that compares expected and reproduced values output from various functions with various input
+
 ## Download Github Repo
 
 If terminal is opened in a position that is not the Desktop, move to desktop with the command:
@@ -43,7 +59,7 @@ Can run git commands from this repo from this point
 
 [For more information about how to navigate the command line](https://www.git-tower.com/blog/command-line-cheat-sheet/)
 
-## Setting Up Git Username and Email (Optional)
+## Configure Git Username and Email (Optional)
 
 It can be useful to set up `git config` options. When running commands that interact with a repo or require permissions, git will prompt you for your username, email, and password. By configuring git, the username and email can be saved locally that avoid being constantly prompted for this information
 
@@ -83,6 +99,25 @@ git config --global user.email
 ```
 Will print out `<username>@users.noreply.github.com` if set correctly
 
+## Setup Conda Environment
+
+Create a new conda environment
+```
+conda env create -f environment.yml
+```
+Generates a new conda env named `esds_github_workshop` based on the variables within the `environment.yml` file. Activate the new env on the command line
+```
+conda activate esds_github_workshop
+```
+The terminal will include the env name when conda is activated
+```
+(esds_github_workshop)user@user-os:~/Desktop/esds-github-sandbox$
+```
+Start JupyterLab
+```
+(esds_github_workshop)user@user-os:~/Desktop/esds-github-sandbox$ jupyter lab
+```
+[For more information about JupyterLab](http://justinbois.github.io/bootcamp/2020_fsri/lessons/l01_welcome.html)
 ## Git and Github
 ### Git vs. Github
 
@@ -100,30 +135,7 @@ Git works with three main areas:
 
 The local working directory lives on a user's computer when `git clone` is run. This is where a user can make changes to a repo locally. The staging area is the middle ground between the local repo and the 'master' repo where a user can decide which changes they have made will be committed to the 'master' repo. The 'master' repo is the remote repo that lives on Github
 
-## Github Overview:
-**Repository (repo)**
-
-Location where all data, code, and documentation are stored on Github. _This_ is a public Github repo and lives at [github.com/ProjectPythia/esds-github-sandbox](https://github.com/ProjectPythia/esds-github-sandbox)
-
-Breakdown of a typical repo:
-
-- `README.md` - The landing page for the repo that contains information such as what the project is about, who its by, how to install it, and displaying various status badges (_this_ is a README.md)
-- `__init__.py` - This file is required for Python to treat a given repo as a Python package
-- `LICENSE.md` - License information on how others can use this repo's contents
-- `requirements.yml` - A file specifying the required packages to be installed in an environment to run this package
-- `.gitignore` -A file that specifies untracked files, typically pointing to a cached files or a website's 'build/' directory, essentially any file that is derivative of other code in the repo
-- `.github/` - fA folder for containing files related to Github! This could include contributing guides, a code of conduct, various Github Action scripts, a codeowners file, or issue/pull templates
-- Code - The functions, scripts, modules, etc..
-- Tests - Testing suite that compares expected and reproduced values output from various functions with various input
-
-[Good example repo](https://github.com/ajdawson/eofs)
-
-**Branches**
-
-Each repo starts with a default branch 'main'. But developers can add new branches to isolate development work without impacting other branches in a repo. This is also useful when working on multiple different features at the same time without the changes to one feature impacting the other. All changes can be made on a branch in isolation and then merged back into the 'main' branch
-
-[For more information about Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
-
+### Git Workflow
 **Fork Repo**
 
 A fork is a new repository that is cloned from the original repository. The forked repo is a clone of the original that lives on your own Github account. You can fork any public repo on Github to your own account for experimentation and any changes on forked repo can be submitted for review to the original repo via a Pull Request. Forking a repo is also a way to use an existing project as a starting point for your own ideas (if you do this, make sure you've checked the original repo's license)
@@ -131,6 +143,17 @@ A fork is a new repository that is cloned from the original repository. The fork
 ![fork](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/3e35c9dc-1932-499a-a94d-24fc1a42d05c)
 
 [For more information about Forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+
+**Branches**
+
+Each repo starts with a default branch 'main'. But developers can add new branches to isolate development work without impacting other branches in a repo. This is also useful when working on multiple different features at the same time without the changes to one feature impacting the other. All changes can be made on a branch in isolation and then merged back into the 'main' branch
+
+[For more information about Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
+
+**Commits**
+Git and Github take advantage of [version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) to keep a record of changes to a repo and each individual file. Each change that a user makes to a repo is made with a 'commit' and associated commit message. Each commit contains information about which files are changed and can be compared against previous versions visually to compare differences
+
+[For more information about Commits](https://github.com/git-guides/git-commit)
 
 **Pull Requests**
 
