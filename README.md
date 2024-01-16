@@ -58,7 +58,7 @@ cd esds-github-sandbox/
 ```
 Can run git commands from this repo from this point
 
-[For more information about how to navigate the command line](https://www.git-tower.com/blog/command-line-cheat-sheet/)
+[For more information about how to navigate the command line](https://github.com/0nn0/terminal-mac-cheatsheet)
 
 ## Configure Git Username and Email (Optional)
 
@@ -272,7 +272,7 @@ While working on the local working directory it is possible that changes have be
 
 If you are interested in using an application instead of the command line to operate git commands, you can download [Github Desktop](https://desktop.github.com/) for Windows/macOS
 
-There are even more commands that can handy to learn for specific cases, [more information here](https://github.com/git-tips/tips)
+There are even more commands that can handy to learn for specific cases, [more information here]([https://github.com/git-tips/tips](https://github.com/0nn0/git-basics-cheatsheet))
 
 ### Conflicts
 It is possible for a conflict to occur if two people are modifying the same lines in the same file at the same time. A conflict occurs when Git cannot automatically determine which change should take priority. A conflict marks the file and prevents a proper merge from occurring. Git will prompt the developers to fix changes to conflict before attempting to merge again
