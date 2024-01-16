@@ -5,8 +5,9 @@ Sandbox repository for a GitHub workshop during the ESDS 2024 event (Jan. 18-19)
 
 Make sure you have the following steps completed before the workshop:
 
-- [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - Create a [GitHub](https://github.com/) account
+- Email/Slack Presentors Your Github Username to Get Access to Repo
+- [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - Install Python [miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html)
 
 Additionally, participants might find it helpful to read the Project Pythia Foundations textbook [GitHub chapters](https://foundations.projectpythia.org/foundations/getting-started-github.html).
