@@ -118,6 +118,7 @@ Start JupyterLab
 (esds_github_workshop)user@user-os:~/Desktop/esds-github-sandbox$ jupyter lab
 ```
 [For more information about JupyterLab](http://justinbois.github.io/bootcamp/2020_fsri/lessons/l01_welcome.html)
+
 ## Git and Github
 ### Git vs. Github
 
@@ -151,6 +152,7 @@ Each repo starts with a default branch 'main'. But developers can add new branch
 [For more information about Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
 
 **Commits**
+
 Git and Github take advantage of [version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) to keep a record of changes to a repo and each individual file. Each change that a user makes to a repo is made with a 'commit' and associated commit message. Each commit contains information about which files are changed and can be compared against previous versions visually to compare differences
 
 [For more information about Commits](https://github.com/git-guides/git-commit)
@@ -337,7 +339,6 @@ Within an issue, you can assign an Issue to someone by selecting 'Assignees' and
 
 You can view all your open Issues at [github.com/issues](https://github.com/issues)
 
-## Practice: Branches
 ## Practice: Pull Request
 A Pull Request allows for a developer that does not otherwise have permissions suggest changes to be merged into a branch/repo
 
@@ -373,6 +374,12 @@ You can view all your open Pull Requests at [github.com/pulls](https://github.co
 
 ## Future Work: 
 
+### Learn How to Use Branches
+Branches are an important part of being able to work on a repo with multiple developers. You can learn how to manage branches with this [visual tutorial](https://learngitbranching.js.org/?locale=en_US)
+
+### Learn Markdown
+README.md uses Markdown to edit: [learn how to use Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 ### Find Good First Issues
 If you want to tackle some more Issues and contribute to open source projects, you can find some issues that repos have labeled as good first issues here:
 [goodfirstissue.dev/](https://goodfirstissue.dev/)
@@ -384,6 +391,3 @@ Making a personal Github profile page for others to see when they select your pr
 
 ### Make a New Repo
 [Make your own repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) and [give your team access to it!](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
-
-### Learn Markdown
-README.md uses Markdown to edit: [learn how to use Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
