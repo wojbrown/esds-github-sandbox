@@ -63,11 +63,11 @@ Will print out `<github-username>` if set correctly
 
 **Configure git email**
 
-Github associates alll commits to an account's email address, but Github has the option keep the email private. Using Github's `noreply` pseudo email address when committing changes protects privacy and hides a developer's personal email, while still associating all changes in a commit to the correct author
+Github associates all commits to an account's email address, but Github has the option to keep the email private. Using Github's `noreply` pseudo email address when committing changes protects privacy and hides a developer's personal email, while still associating all changes in a commit to the correct author
 
 To find the `noreply` email that Github has generated for your specific account:
 
-1. Open Profile > esttings
+1. Open Profile > Settings
 2. Select Emails
 3. Select 'Keep my email address private'
 4. Select 'Block command line pushes that expose my email' (for extra protection)
@@ -86,11 +86,11 @@ Will print out `<username>@users.noreply.github.com` if set correctly
 ## Git and Github
 ### Git vs. Github
 
-Github is a website ([github.com](https://github.com/)) that hosts git repositories. Github allows for code to be shared and makes collaboration easy. By default, Github repos are public and even people without Github logins can view all the data, code, and documentation in a repo (although Github also have private repo options).
+Github is a website ([github.com](https://github.com/)) that hosts git repositories. Github allows for code to be shared and makes collaboration easy. By default, Github repos are public and even people without Github logins can view all the data, code, and documentation in a repo (although Github also has private repo options).
 
 Git is a system with a series of commands that operate a version control system that allows for programmers to track changes in code and collaborate on code in groups
 
-Git allows for a multiple developers to develop on the same repo at the same time and cleanly manage conflicts. This works by each developer having their own local copy of a repo that they work on and then git commands are used when it is time to combine with the 'master' repo (on Github)
+Git allows for multiple developers to develop on the same repo at the same time and cleanly manage conflicts. This works by each developer having their own local copy of a repo that they work on and then git commands are used when it is time to combine with the 'master' repo (on Github)
 
 Git works with three main areas: 
 
@@ -98,7 +98,7 @@ Git works with three main areas:
 2. a staging area
 3. a remote 'master' repo
 
-The local working directory lives on a user's computer when `git clone` is run. This is where a user can make changes to a repo locally. The staging area is middle ground between the local repo and the 'master' repo where a user can decide which changes they have made will be commited to the 'master' repo. The 'master' repo is the remote repo that lives on Github
+The local working directory lives on a user's computer when `git clone` is run. This is where a user can make changes to a repo locally. The staging area is the middle ground between the local repo and the 'master' repo where a user can decide which changes they have made will be committed to the 'master' repo. The 'master' repo is the remote repo that lives on Github
 
 ## Github Overview:
 **Repository (repo)**
@@ -107,11 +107,11 @@ Location where all data, code, and documentation are stored on Github. _This_ is
 
 Breakdown of a typical repo:
 
-- `README.md` - The landing page for the repo that contains information such as what the project is about, who its by, how to install it, and diplsaying various status bages (_this_ is a README.md)
+- `README.md` - The landing page for the repo that contains information such as what the project is about, who its by, how to install it, and displaying various status badges (_this_ is a README.md)
 - `__init__.py` - This file is required for Python to treat a given repo as a Python package
 - `LICENSE.md` - License information on how others can use this repo's contents
 - `requirements.yml` - A file specifying the required packages to be installed in an environment to run this package
-- `.gitignore` -A file that specifies untracked files, typically pointing to a cahced files or a website's 'build/' directory, essentially any file that is derivative of other code in the repo
+- `.gitignore` -A file that specifies untracked files, typically pointing to a cached files or a website's 'build/' directory, essentially any file that is derivative of other code in the repo
 - `.github/` - fA folder for containing files related to Github! This could include contributing guides, a code of conduct, various Github Action scripts, a codeowners file, or issue/pull templates
 - Code - The functions, scripts, modules, etc..
 - Tests - Testing suite that compares expected and reproduced values output from various functions with various input
@@ -120,13 +120,13 @@ Breakdown of a typical repo:
 
 **Branches**
 
-Each repo starts with a default branch 'main'. But developers can add new branches to isolate development work without impacting other branches in a repo. This is also useful when working on multiple different features at the same time without the changes to one feature impacting the other. All changes can be made on a branch in isolation and then merged back into the 'main' brnach.
+Each repo starts with a default branch 'main'. But developers can add new branches to isolate development work without impacting other branches in a repo. This is also useful when working on multiple different features at the same time without the changes to one feature impacting the other. All changes can be made on a branch in isolation and then merged back into the 'main' branch
 
 [For more information about Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
 
 **Fork Repo**
 
-A fork is a new repository that is cloned from the original repository. The forked repo is a clone of the original that lives on your own Github account. You can fork any public repo on Github to your own account for experimentation and ay changes on forked repo can be submitted for review to the original repo via a Pull Request. Forking a repo is also a way to use an existing project as a starting point for your own ideas (if you do this, make sure you've checked the original repo's license)
+A fork is a new repository that is cloned from the original repository. The forked repo is a clone of the original that lives on your own Github account. You can fork any public repo on Github to your own account for experimentation and any changes on forked repo can be submitted for review to the original repo via a Pull Request. Forking a repo is also a way to use an existing project as a starting point for your own ideas (if you do this, make sure you've checked the original repo's license)
 
 ![fork](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/3e35c9dc-1932-499a-a94d-24fc1a42d05c)
 
@@ -140,7 +140,7 @@ A Pull Request allows for changes made to a repo by a user that does not have pe
 
 ### Generate Github Access Token
 
-To use git commands on the command line via the terminal require remote access to a Github account with personal access tokens. To generate a personal access token:
+To use git commands on the command line via the terminal requires remote access to a Github account with personal access tokens. To generate a personal access token:
 
 1. Open Github.com
 2. On the top right of the website, select your personal profile
@@ -165,7 +165,7 @@ git operates with a series of commands that are the same on all platforms (Windo
 
 Any changes that a user makes to their local copy of a repo can be viewed with git status. In addition, git status can also give a user information about if changes have been made to the 'master' repo since the user can downloaded their repo
 
-If a new Python file named `example_script.py` is added to user's local copy of the repo, running `git status` will show the new file. The new file only exists on the local repo until the changes are committed to the 'master' repo. If a file is in red then it is listed as untracked and not in the staging area to be commited in the 'master' repo.
+If a new Python file named `example_script.py` is added to the user's local copy of the repo, running `git status` will show the new file. The new file only exists on the local repo until the changes are committed to the 'master' repo. If a file is in red then it is listed as untracked and not in the staging area to be committed in the 'master' repo.
 
 ```
 user@user-os:~/Desktop/esds-github-sandbox$ git status
@@ -181,7 +181,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 `git add`: moves a change on a local repo into the staging area
 
-By running `git add <filename>`, a local change or new file will be moved into the staging area where it can be committed in to the 'master' repo. Running `git add *` will add all files in the working directory into the staging area, but specifying individual files can be useful if a user does not want to commit all changes to the 'master' repo
+By running `git add <filename>`, a local change or new file will be moved into the staging area where it can be committed into the 'master' repo. Running `git add *` will add all files in the working directory into the staging area, but specifying individual files can be useful if a user does not want to commit all changes to the 'master' repo
 
 ```
 git add example_script.py
@@ -220,7 +220,7 @@ A message is included when `git commit` is run to provide information about what
 user@user-os:~/Desktop/esds-github-sandbox$ git commit -m "new python script added"
 ```
 
-Running `git commit` will move the changes from the working area and into the repo space that will be pushed to 'master' repo when `git push` is called. The changes will not show up in the 'master' repo until `git push` is called however. Often `git commit` and `git push` are called together since this moves the changes from the staging area and into the 'master' repo all at once. However, this is seperated into two steps to avoid causing conflicts on the 'master' repo if a change to a file occurs on the local directory but the local directory is out of date (which can be avoided with `git pull` to get changes before committing)
+Running `git commit` will move the changes from the working area and into the repo space that will be pushed to 'master' repo when `git push` is called. The changes will not show up in the 'master' repo until `git push` is called however. Often `git commit` and `git push` are called together since this moves the changes from the staging area and into the 'master' repo all at once. However, this is separated into two steps to avoid causing conflicts on the 'master' repo if a change to a file occurs on the local directory but the local directory is out of date (which can be avoided with `git pull` to get changes before committing)
 
 Just running `git commit` without `git push` will move the changes fully out of the local working directory into the staging area which running `git status` will warn the user about
 ```
@@ -239,7 +239,7 @@ git push
 ```
 `git pull`: fetch changes committed to the 'master' repo
 
-While working on the local working directory it is possible that changes have been made to the 'master' repo. This can happen when other users push changes the 'master' repo since the local copy of a repo has been updated. Running `git pull` will fetch those changes and apply them to the local repo. If there is a chance that if the user is making changes to the same file that changes have been published to the 'master' repo then merge conflicts can occur
+While working on the local working directory it is possible that changes have been made to the 'master' repo. This can happen when other users push changes to the 'master' repo since the local copy of a repo has been updated. Running `git pull` will fetch those changes and apply them to the local repo. If there is a chance that if the user is making changes to the same file that changes have been published to the 'master' repo then merge conflicts can occur
 
 [For more information about Git and Github](https://gitbookdown.dallasdatascience.com/)
 [For more information about Git](https://rogerdudler.github.io/git-guide/)
@@ -249,7 +249,7 @@ If you are interested in using an application instead of the command line to ope
 There are even more commands that can handy to learn for specific cases, [more information here](https://github.com/git-tips/tips)
 
 ### Conflicts
-It is possible for a conflict to occur if two people are modifying the same lines in the same file at the same time. A conflict occurs when Git cannot automatically determine which change should take priority. A conflict marks the file and prevents a proper merge from occuring. Git will prompt the developers to fix changes to conflict before attempting to merge again
+It is possible for a conflict to occur if two people are modifying the same lines in the same file at the same time. A conflict occurs when Git cannot automatically determine which change should take priority. A conflict marks the file and prevents a proper merge from occurring. Git will prompt the developers to fix changes to conflict before attempting to merge again
 
 A conflict will most likely occur when a merge is attempted. This can occur when a merge starts and a conflict is found in the staging area or during a merge when a conflict is found in the remote Github repo. When `git commit` is run, Git will check to see if there are any pending changes in the working directory that are in conflict with the `git commit`. If a conflict is found, the commit will be temporarily halted until the conflict is resolved
 
@@ -261,7 +261,7 @@ changes from the HEAD that caused conflict
 changes that were added later
 >>>>>>> new_branch_to_merge_later
 ```
-Git added the merge conflict notes `<<<<<<< HEAD` and `>>>>>>> new_branch_to_merge_later` changes seperated by `=======` divider. To resolve merge conflicts, edit the conflicted file and remove the merge conflict notes that Git added
+Git added the merge conflict notes `<<<<<<< HEAD` and `>>>>>>> new_branch_to_merge_later` changes separated by `=======` divider. To resolve merge conflicts, edit the conflicted file and remove the merge conflict notes that Git added
 
 Add changes some merge conflict and commit
 ```
@@ -332,7 +332,7 @@ On your new forked repo, open the README.md file and edit. You can edit files di
 
 ![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/3f1b3f11-623b-4c19-96b2-3ea6e2480989)
 
-Edit the file by add a new line or comment or correct a mispelling and select the green `Commit changes` option
+Edit the file by add a new line or comment or correct a misspelling and select the green `Commit changes` option
 
 ![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/5308ae4d-b6fb-43b6-95d6-5f0ffb70b124)
 
