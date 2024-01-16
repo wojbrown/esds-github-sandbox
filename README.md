@@ -177,7 +177,7 @@ To use git commands on the command line via the terminal requires remote access 
 7. Select Generate new token
 8. Select Generate new token (classic)
 9. Give the token a name under 'Note' (for example: laptop-github)
-10. Under Expiration, select 'No expiration' (you can remove tokens at anytime)
+10. Under Expiration, select '7 days' (you can make new tokens at anytime)
 11. Under Select Scope, check top 'repo'
 12. Select Generate token
 13. Copy down the token locally since it will only be given once
