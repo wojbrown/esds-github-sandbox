@@ -110,14 +110,13 @@ Generates a new conda env named `esds_github_workshop` based on the variables wi
 ```
 conda activate esds_github_workshop
 ```
-The terminal will include the env name when conda is activated
+The terminal will include the env name when conda is activated like `(esds_github_workshop) user@user-os:~/Desktop/esds-github-sandbox$`
+
+Start JupyterLab by running on the command line
 ```
-(esds_github_workshop) user@user-os:~/Desktop/esds-github-sandbox$
+jupyter lab
 ```
-Start JupyterLab will open a browser on the machine at `localhost:8888`
-```
-(esds_github_workshop) user@user-os:~/Desktop/esds-github-sandbox$ jupyter lab
-```
+ This command will open a browser on the machine at `localhost:8888`
 
 [For more information about JupyterLab](http://justinbois.github.io/bootcamp/2020_fsri/lessons/l01_welcome.html)
 
