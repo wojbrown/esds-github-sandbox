@@ -112,12 +112,13 @@ conda activate esds_github_workshop
 ```
 The terminal will include the env name when conda is activated
 ```
-(esds_github_workshop)user@user-os:~/Desktop/esds-github-sandbox$
+(esds_github_workshop) user@user-os:~/Desktop/esds-github-sandbox$
 ```
-Start JupyterLab
+Start JupyterLab will open a browser on the machine at `localhost:8888`
 ```
-(esds_github_workshop)user@user-os:~/Desktop/esds-github-sandbox$ jupyter lab
+(esds_github_workshop) user@user-os:~/Desktop/esds-github-sandbox$ jupyter lab
 ```
+
 [For more information about JupyterLab](http://justinbois.github.io/bootcamp/2020_fsri/lessons/l01_welcome.html)
 
 ## Git and Github
