@@ -117,6 +117,31 @@ Start JupyterLab by running on the command line
 jupyter lab
 ```
  This command will open a browser on the machine at `localhost:8888`
+ ![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/eec37215-b157-4a86-9f9a-8c86d0f6dc27)
+
+### Common Issues and Solutions:
+If the browser opens, but JupyterLab displays an empty page try `http://127.0.0.1:8888/lab` instead of the default `http://localhost:8888/lab`. If this does not work, try switching browsers (Firefox, Chrome, Safari, etc...)
+
+If the browser opens, but JupyterLab prompts you for a password/token
+![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/d512ce1a-96e4-463a-86ec-90564b4050e4)
+
+The token that JupyterLab is expecting can be found in the terminal where `jupyter lab` command is running as `http://localhost:8888/lab?token=<TOKEN/PASSWORD>` or `http://127.0.0.1:8888/lab?token=<TOKEN/PASSWORD>
+
+An example of the Jupyter output:
+
+```
+[I 2024-01-17 11:40:47.517 ServerApp] Jupyter Server 2.10.0 is running at:
+[I 2024-01-17 11:40:47.517 ServerApp] http://localhost:8888/lab?token=b735c83f6f7a7d31a60cb773fc9bf3b392b14227396e26c3
+[I 2024-01-17 11:40:47.517 ServerApp]     http://127.0.0.1:8888/lab?token=b735c83f6f7a7d31a60cb773fc9bf3b392b14227396e26c3
+[I 2024-01-17 11:40:47.517 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2024-01-17 11:40:47.547 ServerApp]
+
+    To access the server, open this file in a browser:
+        file:///home/user/.local/share/jupyter/runtime/jpserver-6001-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=b735c83f6f7a7d31a60cb773fc9bf3b392b14227396e26c3
+        http://127.0.0.1:8888/lab?token=b735c83f6f7a7d31a60cb773fc9bf3b392b14227396e26c3
+```
 
 [For more information about JupyterLab](http://justinbois.github.io/bootcamp/2020_fsri/lessons/l01_welcome.html)
 
