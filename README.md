@@ -125,7 +125,7 @@ If the browser opens, but JupyterLab displays an empty page try `http://127.0.0.
 If the browser opens, but JupyterLab prompts you for a password/token
 ![image](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/d512ce1a-96e4-463a-86ec-90564b4050e4)
 
-The token that JupyterLab is expecting can be found in the terminal where `jupyter lab` command is running as `http://localhost:8888/lab?token=<TOKEN/PASSWORD>` or `http://127.0.0.1:8888/lab?token=<TOKEN/PASSWORD>
+The token that JupyterLab is expecting can be found in the terminal where `jupyter lab` command is running as `http://localhost:8888/lab?token=<TOKEN/PASSWORD>` or `http://127.0.0.1:8888/lab?token=<TOKEN/PASSWORD>`
 
 An example of the Jupyter output:
 
