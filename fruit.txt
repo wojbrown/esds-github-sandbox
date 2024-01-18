@@ -5,6 +5,7 @@ Bananas
 Kiwis
 Mangos
 Strawberries
+Grapes
 Watermelon
 Persimmons
 Cherries
