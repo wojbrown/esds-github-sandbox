@@ -1,54 +1,54 @@
 # esds-github-sandbox
-Sandbox repository for a GitHub workshop during the ESDS 2024 event (Jan. 18-19)
+Sandbox repository for the Python & Git Tutorial during the 2024 ESDS Annual Event
 
-## Setup Instructions
+## Before the Workshop
 
 Make sure you have the following steps completed before the workshop:
 
 - Create a [GitHub](https://github.com/) account
-- Email/Slack Presentors Your Github Username to Get Access to Repo
+- Share your GitHub username to with the instructors via email or Slack
 - [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- Install Python [miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html)
+- [Install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html)
 
-Additionally, participants might find it helpful to read the Project Pythia Foundations textbook [GitHub chapters](https://foundations.projectpythia.org/foundations/getting-started-github.html).
+Additionally, participants might find it helpful to read the Project Pythia Foundations chapters on [Getting Started with GitHub](https://foundations.projectpythia.org/foundations/getting-started-github.html) and [Getting Started with Python](https://foundations.projectpythia.org/foundations/getting-started-python.html).
 
 ### Setup
 
-Open a terminal (also known as a command prompt). In Linux and macOS, search for 'Terminal Prompt'. On Windows, the terminal is within Git Bash
-
-Move onto [Downloading Github Repo](#Download-Github-Repo)
+Open a terminal window (also known as a command prompt). On Linux or macOS, search for 'terminal'. On Windows, use the terminal within Git Bash.
 
 #### On Windows
-Git Bash should be installed by default for Windows 11. Search for `git bash` and open git bash as a new terminal
+Search for `git bash` and open a new terminal window.
 
-If Git Bash is not already downloaded, it can be [downloaded for Windows here](https://git-scm.com/download/win)
+If Git Bash is not already installed, it can be [downloaded for Windows here](https://git-scm.com/download/win).
 
-By default, a terminal in Github Bash will open a command line at the base directory `/c/Users/<USERNAME>`
+By default, a terminal in Git Bash will open a command line at the base directory `/c/Users/<USERNAME>`.
 
-## Github Overview:
+## GitHub Overview:
 **Repository (repo)**
 
-Location where all data, code, and documentation are stored on Github. _This_ is a public Github repo and lives at [github.com/ProjectPythia/esds-github-sandbox](https://github.com/ProjectPythia/esds-github-sandbox)
+Location where all code and related materials are stored on Github. _This_ is a public GitHub repo and lives at [github.com/ProjectPythia/esds-github-sandbox](https://github.com/ProjectPythia/esds-github-sandbox)
 
 Breakdown of a typical repo:
 
-- `README.md` - The landing page for the repo that contains information such as what the project is about, who its by, how to install it, and displaying various status badges (_this_ is a README.md)
+- `README.md` - The landing page for the repo that contains information such as what the project is about, who it was created by, how to install it, and displays various status badges (_this_ is a README.md)
 - `__init__.py` - This file is required for Python to treat a given repo as a Python package
-- `LICENSE.md` - License information on how others can use this repo's contents
-- `requirements.yml` - A file specifying the required packages to be installed in an environment to run this package
-- `.gitignore` -A file that specifies untracked files, typically pointing to a cached files or a website's 'build/' directory, essentially any file that is derivative of other code in the repo
-- `.github/` - fA folder for containing files related to Github! This could include contributing guides, a code of conduct, various Github Action scripts, a codeowners file, or issue/pull templates
+- `LICENSE` - License information on how others can use this repo's contents
+- `environment.yml` - A file specifying the required packages to be installed in an environment to run this package
+- `.gitignore` - A file that specifies untracked files, typically pointing to a cached files or a website's 'build/' directory, essentially any file that is derivative of other code in the repo
+- `.github/` - fA folder containing files related to GitHub! This could include contributing guides, a code of conduct, various Github Action scripts, a codeowners file, or issue/pull templates
 - Code - The functions, scripts, modules, etc..
 - Tests - Testing suite that compares expected and reproduced values output from various functions with various input
 
-## Download Github Repo
+## Fork GitHub Repo
 
-If terminal is opened in a position that is not the Desktop, move to desktop with the command:
+## Clone GitHub Repo
+
+If the current working directory in your terminal is not the Desktop, move to desktop with the following commands:
 ```
 cd
 cd Desktop/
 ```
-Clone Github repo esds-github-sandbox
+Clone the GitHub repo esds-github-sandbox
 ```
 git clone https://github.com/ProjectPythia/esds-github-sandbox.git
 ```
@@ -58,21 +58,21 @@ cd esds-github-sandbox/
 ```
 Can run git commands from this repo from this point
 
-[For more information about how to navigate the command line](https://github.com/0nn0/terminal-mac-cheatsheet)
+[For more information about how to navigate the command line](https://swcarpentry.github.io/shell-novice/key-points.html)
 
 ## Configure Git Username and Email (Optional)
 
 It can be useful to set up `git config` options. When running commands that interact with a repo or require permissions, git will prompt you for your username, email, and password. By configuring git, the username and email can be saved locally that avoid being constantly prompted for this information
 
-**Configure git username**
+**Configure git name**
 
-The username is the name associated with Github (not the profile full name). You can check your name by selecting Profile and checking the url (for example: https://github.com/github-username)
+You can configure your name in git as your GitHub username. You can check your GitHub username by selecting your profile and checking the url (for example: https://github.com/github-username).
 
-Set username on the terminal
+Set name on the terminal
 ```
 git config --global user.name "<github-username>"
 ```
-Verify username has been set correctly
+Verify name has been set correctly
 ```
 git config --global user.name
 ```
@@ -80,15 +80,15 @@ Will print out `<github-username>` if set correctly
 
 **Configure git email**
 
-Github associates all commits to an account's email address, but Github has the option to keep the email private. Using Github's `noreply` pseudo email address when committing changes protects privacy and hides a developer's personal email, while still associating all changes in a commit to the correct author
+GitHub associates all commits to an account's email address, but GitHub has the option to keep the email private. Using GitHub's `noreply` email address when committing changes protects privacy and hides a developer's personal email, while still associating all changes in a commit to the correct author.
 
 To find the `noreply` email that Github has generated for your specific account:
 
 1. Open Profile > Settings
-2. Select Emails
+2. Select 'Emails'
 3. Select 'Keep my email address private'
 4. Select 'Block command line pushes that expose my email' (for extra protection)
-5. Copy the `<username>@users.noreply.github.com` Github provides
+5. Copy the `<username>@users.noreply.github.com` GitHub provides
 
 Set the email address on the terminal
 ```
@@ -102,7 +102,7 @@ Will print out `<username>@users.noreply.github.com` if set correctly
 
 ## Setup Conda Environment
 
-Create a new conda environment
+Create a new conda environment from the file provided in the repo
 ```
 conda env create -f environment.yml
 ```
@@ -143,29 +143,29 @@ An example of the Jupyter output:
         http://127.0.0.1:8888/lab?token=b735c83f6f7a7d31a60cb773fc9bf3b392b14227396e26c3
 ```
 
-[For more information about JupyterLab](http://justinbois.github.io/bootcamp/2020_fsri/lessons/l01_welcome.html)
+[For more information about JupyterLab](https://jupyterlab.readthedocs.io/en/latest/)
 
-## Git and Github
-### Git vs. Github
+## Git and GitHub
+### Git vs. GitHub
 
-Github is a website ([github.com](https://github.com/)) that hosts git repositories. Github allows for code to be shared and makes collaboration easy. By default, Github repos are public and even people without Github logins can view all the data, code, and documentation in a repo (although Github also has private repo options).
+GitHub is a website ([github.com](https://github.com/)) that hosts git repositories. GitHub allows for code to be shared and makes collaboration easy. By default, GitHub repos are public and even people without GitHub logins can view all the data, code, and documentation in a repo (although GitHub also has private repo options).
 
-Git is a system with a series of commands that operate a version control system that allows for programmers to track changes in code and collaborate on code in groups
+Git is a system with a series of commands that operate a version control system that allows for programmers to track changes in code and collaborate on code in groups.
 
-Git allows for multiple developers to develop on the same repo at the same time and cleanly manage conflicts. This works by each developer having their own local copy of a repo that they work on and then git commands are used when it is time to combine with the 'master' repo (on Github)
+Git allows for multiple developers to develop on the same repo at the same time and cleanly manage conflicts. This works by each developer having their own local copy of a repo that they work on and then git commands are used when it is time to combine with the 'main' repo (on Github)
 
 Git works with three main areas: 
 
 1. a local working directory
 2. a staging area
-3. a remote 'master' repo
+3. a remote 'main' repo
 
-The local working directory lives on a user's computer when `git clone` is run. This is where a user can make changes to a repo locally. The staging area is the middle ground between the local repo and the 'master' repo where a user can decide which changes they have made will be committed to the 'master' repo. The 'master' repo is the remote repo that lives on Github
+The local working directory lives on a user's computer when `git clone` is run. This is where a user can make changes to a repo locally. The staging area is the middle ground between the local repo and the 'main' repo where a user can decide which changes they have made will be committed to the 'main' repo. The 'main' repo is the remote repo that lives on GitHub
 
 ### Git Workflow
 **Fork Repo**
 
-A fork is a new repository that is cloned from the original repository. The forked repo is a clone of the original that lives on your own Github account. You can fork any public repo on Github to your own account for experimentation and any changes on forked repo can be submitted for review to the original repo via a Pull Request. Forking a repo is also a way to use an existing project as a starting point for your own ideas (if you do this, make sure you've checked the original repo's license)
+A fork is a new repository that is cloned from the original repository. The forked repo is a clone of the original that lives on your own GitHub account. You can fork any public repo on GitHub to your own account for experimentation and any changes on forked repo can be submitted for review to the original repo via a Pull Request. Forking a repo is also a way to use an existing project as a starting point for your own ideas (if you do this, make sure you've checked the original repo's license)
 
 ![fork](https://github.com/ProjectPythia/esds-github-sandbox/assets/22159116/3e35c9dc-1932-499a-a94d-24fc1a42d05c)
 
@@ -179,21 +179,21 @@ Each repo starts with a default branch 'main'. But developers can add new branch
 
 **Commits**
 
-Git and Github take advantage of [version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) to keep a record of changes to a repo and each individual file. Each change that a user makes to a repo is made with a 'commit' and associated commit message. Each commit contains information about which files are changed and can be compared against previous versions visually to compare differences
+Git and GitHub take advantage of [version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) to keep a record of changes to a repo and each individual file. Each change that a user makes to a repo is made with a 'commit' and associated commit message. Each commit contains information about which files are changed and can be compared against previous versions visually to compare differences
 
 [For more information about Commits](https://github.com/git-guides/git-commit)
 
 **Pull Requests**
 
-A Pull Request allows for changes made to a repo by a user that does not have permissions to change a repo to be submitted for review. If accepted, the original repo can "Pull" the requested changes and merge them into the original repo. This is the most common way to contribute to public repos. All open Pull Requests are visible at the top of a Github repo
+A Pull Request allows for changes made to a repo by a user that does not have permissions to change a repo to be submitted for review. If accepted, the original repo can "Pull" the requested changes and merge them into the original repo. This is the most common way to contribute to public repos. All open Pull Requests are visible at the top of a GitHub repo
 
 [For more information about Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
-### Generate Github Access Token
+### Generating GitHub Access Tokens
 
-To use git commands on the command line via the terminal requires remote access to a Github account with personal access tokens. To generate a personal access token:
+To use git commands on the command line via the terminal requires remote access to a GitHub account with personal access tokens or SSH keys. To generate a personal access token:
 
-1. Open Github.com
+1. Open github.com
 2. On the top right of the website, select your personal profile
 3. Select Settings
 4. On the left toolbar on the bottom, select Developer Settings
@@ -205,7 +205,7 @@ To use git commands on the command line via the terminal requires remote access 
 10. Under Expiration, select '7 days' (you can make new tokens at anytime)
 11. Under Select Scope, check top 'repo'
 12. Select Generate token
-13. Copy down the token locally since it will only be given once
+13. Copy down the token locally since it will only be given once and save in a secure location (this is effectively a password)
 
 [For more information about personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
@@ -232,7 +232,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 `git add`: moves a change on a local repo into the staging area
 
-By running `git add <filename>`, a local change or new file will be moved into the staging area where it can be committed into the 'master' repo. Running `git add *` will add all files in the working directory into the staging area, but specifying individual files can be useful if a user does not want to commit all changes to the 'master' repo
+By running `git add <filename>`, a local change or new file will be moved into the staging area where it can be committed into the 'main' repo. Running `git add *` will add all files in the working directory into the staging area, but specifying individual files can be useful if a user does not want to commit all changes to the 'main' repo
 
 ```
 git add example_script.py
@@ -283,16 +283,16 @@ nothing to commit, working directory clean
 ```
 `git push`: push commits in staging area into the 'master' repo
 
-Running `git push` will publish changes to the 'master' repo and prompt the user for their Github username and password. Rather than using the Github password that a user logs into their account with, Github requires a user's password to be a token for security reasons. For more information about generating an access token review [Generate Github Access Token](#Generate-Github-Access-Token)
+Running `git push` will publish changes to the 'main' repo and prompt the user for their GitHub username and password. Rather than using the GitHub password that a user logs into their account with, GitHub requires a user's password to be a token for security reasons. For more information about generating an access token review [Generating GitHub Access Tokens](#Generating-GitHub-Access-Tokens)
 
 ```
 git push
 ```
-`git pull`: fetch changes committed to the 'master' repo
+`git pull`: fetch changes committed to the 'main' repo
 
-While working on the local working directory it is possible that changes have been made to the 'master' repo. This can happen when other users push changes to the 'master' repo since the local copy of a repo has been updated. Running `git pull` will fetch those changes and apply them to the local repo. If there is a chance that if the user is making changes to the same file that changes have been published to the 'master' repo then merge conflicts can occur
+While working on the local working directory it is possible that changes have been made to the 'main' repo. This can happen when other users push changes to the 'main' repo since the local copy of a repo has been updated. Running `git pull` will fetch those changes and apply them to the local repo. If there is a chance that if the user is making changes to the same file that changes have been published to the 'main' repo then merge conflicts can occur
 
-[For more information about Git and Github](https://gitbookdown.dallasdatascience.com/)
+[For more information about Git and GitHub](https://gitbookdown.dallasdatascience.com/)
 [For more information about Git](https://rogerdudler.github.io/git-guide/)
 
 If you are interested in using an application instead of the command line to operate git commands, you can download [Github Desktop](https://desktop.github.com/) for Windows/macOS
@@ -325,8 +325,8 @@ Some good ways to avoid conflicts:
 - Commit often with small changes
 - Use isolated branches
 
-## Practice: Create Github Issues
-Github Issues track issues, bugs, and feature requests to a repo. They can be created by anyone with a Github account, even if they do not have permissions to edit the repo
+## Practice: Create GitHub Issues
+GitHub Issues track issues, bugs, and feature requests to a repo. They can be created by anyone with a Github account, even if they do not have permissions to edit the repo
 
 [Try it out! Create an Issue for this repo](https://github.com/ProjectPythia/esds-github-sandbox/issues)
 
@@ -350,12 +350,12 @@ The issue templates in this repo are:
 
 [For more information about Issue Templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
 
-## Practice: Address Github Issues
+## Practice: Address GitHub Issues
 Within Issues, open [Pre-work #3](https://github.com/ProjectPythia/esds-github-sandbox/issues)
 
 Add a comment to the Issue with your username when you have completed the steps for Pre-Work
 
-## Practice: Fix Github Issues
+## Practice: Fix GitHub Issues
 Create a new Issue with the title "Github Issue Practice ESDS"
 
 Next, assign the issue to all members in your team
@@ -398,7 +398,7 @@ Fill out `Open a pull request` with a relevant Title and a summary of descriptio
 
 You can view all your open Pull Requests at [github.com/pulls](https://github.com/pulls)
 
-## Future Work: 
+## Additional Practice: 
 
 ### Learn How to Use Branches
 Branches are an important part of being able to work on a repo with multiple developers. You can learn how to manage branches with this [visual tutorial](https://learngitbranching.js.org/?locale=en_US)
@@ -410,10 +410,10 @@ README.md uses Markdown to edit: [learn how to use Markdown](https://github.com/
 If you want to tackle some more Issues and contribute to open source projects, you can find some issues that repos have labeled as good first issues here:
 [goodfirstissue.dev/](https://goodfirstissue.dev/)
 
-### Fill out Your Github Profile Page
-[Make a Custom Github Profile Page](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile)
+### Fill out Your GitHub Profile Page
+[Make a Custom GitHub Profile Page](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile)
 
-Making a personal Github profile page for others to see when they select your profile ([some good examples](https://github.com/abhisheknaiidu/awesome-github-profile-readme))
+Making a personal GitHub profile page for others to see when they select your profile ([some examples](https://github.com/abhisheknaiidu/awesome-github-profile-readme))
 
 ### Make a New Repo
 [Make your own repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) and [give your team access to it!](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
