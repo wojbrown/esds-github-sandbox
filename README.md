@@ -60,7 +60,7 @@ Can run git commands from this repo from this point
 
 [For more information about how to navigate the command line](https://swcarpentry.github.io/shell-novice/key-points.html)
 
-## Configure Git Username and Email (Optional)
+## Configure Git Name and Email (Optional)
 
 It can be useful to set up `git config` options. When running commands that interact with a repo or require permissions, git will prompt you for your username, email, and password. By configuring git, the username and email can be saved locally that avoid being constantly prompted for this information
 
