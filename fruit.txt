@@ -4,3 +4,4 @@ Apples
 Bananas
 Kiwis
 Mangos
+Strawberries
