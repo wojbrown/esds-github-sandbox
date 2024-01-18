@@ -214,9 +214,9 @@ git operates with a series of commands that are the same on all platforms (Windo
 
 `git status`: displays all local changes in the local working directory and staging area
 
-Any changes that a user makes to their local copy of a repo can be viewed with git status. In addition, git status can also give a user information about if changes have been made to the 'master' repo since the user can downloaded their repo
+Any changes that a user makes to their local copy of a repo can be viewed with git status. In addition, git status can also give a user information about if changes have been made to the 'main' repo since the user can downloaded their repo
 
-If a new Python file named `example_script.py` is added to the user's local copy of the repo, running `git status` will show the new file. The new file only exists on the local repo until the changes are committed to the 'master' repo. If a file is in red then it is listed as untracked and not in the staging area to be committed in the 'master' repo.
+If a new Python file named `example_script.py` is added to the user's local copy of the repo, running `git status` will show the new file. The new file only exists on the local repo until the changes are committed to the 'main' repo. If a file is in red then it is listed as untracked and not in the staging area to be committed in the 'main' repo.
 
 ```
 user@user-os:~/Desktop/esds-github-sandbox$ git status
@@ -271,7 +271,7 @@ A message is included when `git commit` is run to provide information about what
 user@user-os:~/Desktop/esds-github-sandbox$ git commit -m "new python script added"
 ```
 
-Running `git commit` will move the changes from the working area and into the repo space that will be pushed to 'master' repo when `git push` is called. The changes will not show up in the 'master' repo until `git push` is called however. Often `git commit` and `git push` are called together since this moves the changes from the staging area and into the 'master' repo all at once. However, this is separated into two steps to avoid causing conflicts on the 'master' repo if a change to a file occurs on the local directory but the local directory is out of date (which can be avoided with `git pull` to get changes before committing)
+Running `git commit` will move the changes from the working area and into the repo space that will be pushed to 'main' repo when `git push` is called. The changes will not show up in the 'main' repo until `git push` is called however. Often `git commit` and `git push` are called together since this moves the changes from the staging area and into the 'main' repo all at once. However, this is separated into two steps to avoid causing conflicts on the 'main' repo if a change to a file occurs on the local directory but the local directory is out of date (which can be avoided with `git pull` to get changes before committing)
 
 Just running `git commit` without `git push` will move the changes fully out of the local working directory into the staging area which running `git status` will warn the user about
 ```
@@ -281,7 +281,7 @@ Your branch is ahead of 'origin/main' by 1 commit.
   (use "git push" to publish your local commits)
 nothing to commit, working directory clean
 ```
-`git push`: push commits in staging area into the 'master' repo
+`git push`: push commits in staging area into the 'main' repo
 
 Running `git push` will publish changes to the 'main' repo and prompt the user for their GitHub username and password. Rather than using the GitHub password that a user logs into their account with, GitHub requires a user's password to be a token for security reasons. For more information about generating an access token review [Generating GitHub Access Tokens](#Generating-GitHub-Access-Tokens)
 
