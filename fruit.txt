@@ -1,6 +1,6 @@
-orange
-grapefruit
-banana
+Oranges
+Grapefruits
 Apples
 Bananas
 Kiwis
+Mangos
