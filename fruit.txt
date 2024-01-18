@@ -6,3 +6,4 @@ Kiwis
 Mangos
 Strawberries
 Watermelon
+Persimmons
